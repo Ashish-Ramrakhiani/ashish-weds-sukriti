@@ -182,32 +182,39 @@ html {
   white-space: nowrap;
 }
 
-/* LINKED-LETTER MONOGRAM (Cormorant Garamond caps + Great Vibes ampersand) */
-.monogram-mark {
-  display: inline-flex;
-  align-items: baseline;
-  justify-content: center;
-  line-height: 1;
-  margin: 2px 0;
+/* INTERLOCKING MONOGRAM (bold Cormorant Garamond "A" woven with a flowing Great Vibes "S") */
+.monogram-interlock {
+  position: relative;
+  width: 74%;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  container-type: inline-size;
 }
 
-.monogram-letter {
+.monogram-interlock .mono-s {
+  position: absolute;
+  left: 51%;
+  top: 53%;
+  transform: translate(-50%, -50%);
+  font-family: 'Great Vibes', cursive;
+  font-size: 62px;
+  font-size: 58cqw;
+  color: #C5A059;
+  opacity: 0.95;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+.monogram-interlock .mono-a {
+  position: absolute;
+  left: 46.5%;
+  top: 45.5%;
+  transform: translate(-50%, -50%);
   font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
-  font-size: clamp(26px, 9vw, 40px);
-  font-size: clamp(26px, 11cqw, 40px);
+  font-size: 73px;
+  font-size: 68cqw;
   color: #F4EAD4;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-}
-
-.monogram-amp {
-  font-family: 'Great Vibes', cursive;
-  font-size: clamp(18px, 6vw, 27px);
-  font-size: clamp(18px, 7.5cqw, 27px);
-  color: #C5A059;
-  margin: 0 -0.05em;
-  transform: translateY(0.22em);
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .seal-circle {
