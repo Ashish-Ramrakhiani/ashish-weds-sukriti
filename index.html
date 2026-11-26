@@ -100,8 +100,8 @@
 
   <!-- HERO SECTION - OPTION 1 (100dvh) + OPTION 3 (SAFARI LOW HEIGHT MEDIA QUERY FIT) -->
   <section class="hero-section relative flex flex-col items-center justify-center pt-16 pb-16 px-4 sm:px-8 overflow-hidden bg-ivory-100">
-    <!-- Background Floral Image - 100% Full Bleed Edge-to-Edge -->
-    <div class="absolute inset-0 z-0 pointer-events-none opacity-100 overflow-hidden">
+    <!-- Background Floral Image - capped width (native hero_bg.jpg is 1054px wide) to avoid blurry upscaling on wide desktop screens -->
+    <div class="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[1700px] z-0 pointer-events-none opacity-100 overflow-hidden">
       <img src="assets/hero_bg.jpg" alt="Palace Archway Background" class="w-full h-full object-cover filter brightness-105 contrast-105" />
     </div>
 
